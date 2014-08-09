@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
 
+  devise_for :users
+ # devise_for :installs (commented this out or devise install wouldn't work)
   resources :posts
 
   # The priority is based upon order of creation: first created -> highest priority.
